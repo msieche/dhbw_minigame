@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game starts in"
+        android:id="@+id/startCounter_title"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startCounter_title"
+        android:id="@+id/startCounter_value"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:text="1"/>
+
+    <TableLayout
+        android:layout_below="@id/startCounter_value"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout_Button">
+
+        <TableRow
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Button1"
+                android:id="@+id/button_TopLeft"
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Button2"
+                android:id="@+id/button_TopRight"
+                />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Button3"
+                android:id="@+id/button_BottomLeft"/>/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Button4"
+                android:id="@+id/button_BottomRight" />
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLayout_Button"
+        android:id="@+id/game_Score"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:text="Score"/>
+
+</RelativeLayout>

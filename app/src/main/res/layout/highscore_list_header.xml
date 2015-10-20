@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/highscore_playerName_header"
+        android:layout_width="0dp"
+        android:layout_weight="33"
+        android:layout_height="wrap_content"
+        android:text="Player" />
+    <TextView
+        android:id="@+id/highscore_level_header"
+        android:layout_width="0dp"
+        android:layout_weight="33"
+        android:layout_height="wrap_content"
+        android:text="Level" />
+    <TextView
+        android:id="@+id/highscore_points_header"
+        android:layout_width="0dp"
+        android:layout_weight="33"
+        android:layout_height="wrap_content"
+        android:text="Points" />
+</LinearLayout>
